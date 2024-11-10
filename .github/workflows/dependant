@@ -1,0 +1,14 @@
+name: Dependent Workflow
+
+on:
+  workflow_run:
+    workflows: ["Primary Workflow"]
+    types:
+      - completed
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo Dependent Workflow
+        run: echo "Dependent Workflow is running after Primary Workflow!"
