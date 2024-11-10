@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Echo Primary Workflow
-        run: echo "Primary Workflow is running!"
+        run: echo "Primary Workflow is running hehe!"
