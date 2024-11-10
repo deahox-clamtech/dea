@@ -1,0 +1,13 @@
+name: Primary Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo Primary Workflow
+        run: echo "Primary Workflow is running!"
